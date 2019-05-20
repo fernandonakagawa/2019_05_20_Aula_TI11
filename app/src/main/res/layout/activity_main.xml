@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/margemEsquerda">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/digiteValor"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/margemTop"
+        />
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margemTop"
+        android:textSize="24sp"
+        android:hint="@string/dicaValor"
+        android:inputType="numberDecimal"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/converterDolar"
+            android:onClick="clicouDolar"
+            android:background="@color/btnDolar"
+            android:layout_marginTop="@dimen/margemTop"
+           />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/converterEuro"
+            android:onClick="clicouEuro"
+            android:background="@color/btnEuro"
+            android:layout_marginTop="@dimen/margemTop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/dicaValor"
+        android:layout_marginTop="@dimen/margemTop"/>
+
+</LinearLayout>

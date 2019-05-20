@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aula2019_05_20</string>
+    <string name="digiteValor">Digite o valor:</string>
+    <string name="dicaValor">0</string>
+    <string name="converterDolar">Converter para Dólar</string>
+    <string name="converterEuro">Converter para Euro</string>
+</resources>
